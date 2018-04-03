@@ -271,7 +271,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/04/02/Talk-is-cheap-show-me-the-code/" itemprop="url">一些Markdown笔记</a></h1>
+                <a class="post-title-link" href="/2018/04/02/Talk-is-cheap-show-me-the-code/" itemprop="url">markdown三种高亮方式</a></h1>
         
 
         <div class="post-meta">
@@ -323,11 +323,18 @@
       
         
           
-            <p>这个`可以高亮文字，如`exciting`效果为：<code>exciting</code></p>
-<p>三个`可以高亮且编号(代码块)，如：<br>```<br>听说这样可以写代码？<br>```<br>效果：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">听说这样可以写代码？</span><br></pre></td></tr></table></figure></p>
-<p>三个`后面加语言名称(比如cpp,js等)可以指定语言：<br>```cpp<br>#include<iostream><br>using namespace std;<br>int main()<br>{<br>    cout &lt;&lt; “Talk is cheap, show me the code.” &lt;&lt; endl;<br>    return 0;<br>}<br>```<br>效果：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"Talk is cheap, show me the code."</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></iostream></p>
-<p>把主题配置文件里的MathJax设置为true后可以使用Latex<br>这是行内公式$e^{i\pi}+1=0$</p>
-<p>使用align环境:<br>\begin{align}<br>g(x) &amp;= \left(\frac{\partial f}{\partial x_i}\right)_{n\times 1}\\<br>G(x) &amp;= \left(\frac{\partial^2 f}{\partial x_i \partial x_j}\right)_{n\times n}<br>\end{align}</p>
+            <h1 id="markdown三种高亮方式："><a href="#markdown三种高亮方式：" class="headerlink" title="markdown三种高亮方式："></a>markdown三种高亮方式：</h1><ol>
+<li><p>双空格以上缩进</p>
+<pre><code>空一行缩进后(tab or cmd+] )启用高亮
+</code></pre></li>
+<li><p>使用```code block```的方式(快捷键cmd+shift+k)</p>
+</li>
+<li>使用代码块的语法，具体可以看<a href="http://octopress.org/docs/plugins/codeblock" target="_blank" rel="noopener">Codeblock - Octopress</a></li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% codeblock [lang:language] [title] [url] [link text] %&#125;</span><br><span class="line">code snippet</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure>
+<p>三个`后面加语言名称(比如cpp,js等)可以指定语言：</p>
+<p>```cpp<br>#include<iostream><br>using namespace std;<br>int main()<br>{<br>    cout &lt;&lt; “Talk is cheap, show me the code.” &lt;&lt; endl;<br>    return 0;<br>}<br>```</iostream></p>
+<p>效果：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"Talk is cheap, show me the code."</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
           
         
@@ -395,7 +402,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/04/02/hello-world/" itemprop="url">Hello World</a></h1>
+                <a class="post-title-link" href="/2018/04/02/hello-world/" itemprop="url">MWeb写作使用说明</a></h1>
         
 
         <div class="post-meta">
@@ -446,18 +453,16 @@
 
       
         
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          <h1 id="Markdown-语法和-MWeb-写作使用说明"><a href="#Markdown-语法和-MWeb-写作使用说明" class="headerlink" title="Markdown 语法和 MWeb 写作使用说明"></a>Markdown 语法和 MWeb 写作使用说明</h1><h2 id="Markdown-的设计哲学"><a href="#Markdown-的设计哲学" class="headerlink" title="Markdown 的设计哲学"></a>Markdown 的设计哲学</h2><blockquote>
+<p>Markdown 的目標是實現「易讀易寫」。<br>不過最需要強調的便是它的可讀性。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會像是由許多標籤或是格式指令所構成。<br>Markdown 的語法有個主要的目的：用來作為一種網路內容的<em>寫作</em>用語言。</p>
+</blockquote>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/02/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -546,11 +551,30 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
 
           </nav>
 
           
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/Telehub" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
           
 
           
